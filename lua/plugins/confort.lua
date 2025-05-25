@@ -7,10 +7,13 @@ return {
       formatters_by_ft = {
         lua = { "stylua" },
         python = { "isort", "black" },
-        rust = { { "rustfmt"} },
         javascript = { "prettier" },
         typescript = { "prettier" },
 		go = {"gofmt"},
+        rust = {
+            formatters = { "rustfmt", "lsp" },
+            stop_after_first = true,
+          },
       },
     })
 
