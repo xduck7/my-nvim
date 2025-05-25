@@ -1,3 +1,4 @@
+
 return {
   {
     "CRAG666/code_runner.nvim",
@@ -12,6 +13,14 @@ return {
           python = "python3 -u",
           c = "gcc $fileName -o $fileNameWithoutExt && ./$fileNameWithoutExt",
           cpp = "g++ $fileName -o $fileNameWithoutExt && ./$fileNameWithoutExt",
+          java = "javac $fileName && java $fileNameWithoutExt",
+          javascript = "node $fileName",
+          typescript = "ts-node $fileName",
+          go = "go run $fileName",
+          rust = "rustc $fileName -o $fileNameWithoutExt && ./$fileNameWithoutExt",
+          ruby = "ruby $fileName",
+          bash = "bash $fileName",
+          sh = "bash $fileName",
         },
         term = {
           position = "float",
