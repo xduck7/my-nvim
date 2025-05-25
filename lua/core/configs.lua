@@ -1,4 +1,4 @@
-print(":")
+print(" ")
 
 -- Line numbers
 vim.wo.number = true
@@ -18,7 +18,8 @@ vim.opt.softtabstop = 4
 
 -- Other
 vim.opt.scrolloff = 12
-vim.opt.wrap = false
+vim.opt.sidescrolloff= 8
+vim.opt.wrap = true 
 vim.opt.termguicolors = true
 
 -- Fillchars
